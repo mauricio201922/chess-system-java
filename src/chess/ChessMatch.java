@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import boeardgame.Board;
 import boeardgame.Piece;
 import boeardgame.Position;
+import chess.pieces.Bishop;
 import chess.pieces.King;
 import chess.pieces.Pawn;
 import chess.pieces.Rook;
@@ -189,6 +190,10 @@ public class ChessMatch {
         placeNewPiece('a', 1, new Rook(board, Color.WHITE));
         placeNewPiece('h', 1, new Rook(board, Color.WHITE));
 
+        // Bispos brancas
+        placeNewPiece('c', 1, new Bishop(board, Color.WHITE));
+        placeNewPiece('f', 1, new Bishop(board, Color.WHITE));
+
         // rei branco
         placeNewPiece('e', 1, new King(board, Color.WHITE));
 
@@ -205,6 +210,10 @@ public class ChessMatch {
         // Torres pretos
         placeNewPiece('a', 8, new Rook(board, Color.BLACK));
         placeNewPiece('h', 8, new Rook(board, Color.BLACK));
+
+        // Bispos pretas
+        placeNewPiece('c', 8, new Bishop(board, Color.BLACK));
+        placeNewPiece('f', 8, new Bishop(board, Color.BLACK));
 
         // Rei preto
         placeNewPiece('e', 8, new King(board, Color.BLACK));
