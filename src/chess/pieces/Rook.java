@@ -20,7 +20,7 @@ public class Rook extends ChessPiece {
     @Override
     public boolean[][] possibleMoves() {
         boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
-        boeardgame.Position p = new Position(0, 0);
+        Position p = new Position(0, 0);
 
         // above
         p.setValue(position.getRow() - 1, position.getColumn());
